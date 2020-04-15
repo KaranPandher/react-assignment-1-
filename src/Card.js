@@ -20,16 +20,17 @@ class Card extends Component {
             ]
         }
     }
+
     render() {
         const {
             firstName,
             initials, 
             info
         } = this.state 
-        
+    
         return ( 
         <React.Fragment> 
-        
+    
             <section className = "card-container">
                 <header className = "card-header">
                     <span initials = {initials}></span>
@@ -41,7 +42,7 @@ class Card extends Component {
                     return (
                         <li key = {index}>
                             <span>{row.title}</span>
-                            {row.text ? row.text: 'n/a'}
+                            {row.text ? row.text: 'n/a'} 
                         </li>
                     )
                 })}
